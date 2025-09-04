@@ -22,3 +22,9 @@
 \renewcommand\Authfont{\normalsize\bfseries}
 \renewcommand\Affilfont{\small\itshape}
 \setlength{\affilsep}{1em}
+
+\makeatletter
+\pretocmd{\@author}
+  {\begin{center}\large\bfseries\gruppo\end{center}\par\vspace{1em}}
+  {}{} % Argomenti per successo/fallimento (lasciare vuoti)
+\makeatother
