@@ -20,7 +20,6 @@
 \RequirePackage{etoolbox}
 
 % Allinea a sinistra il blocco autori/affiliazioni
-\Authsep_x{0.5em} % Spazio orizzontale tra autore e affiliazione (opzionale)
 \renewcommand\Authands{, } % Usa la virgola invece di "and" tra gli autori
 \makeatletter
 \patchcmd{\AB@authors}{\centering}{\raggedright}{}{} % Sostituisce \centering con \raggedright
