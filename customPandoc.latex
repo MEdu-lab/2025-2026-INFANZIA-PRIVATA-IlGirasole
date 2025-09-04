@@ -535,8 +535,8 @@ $else$
 $endif$
 \subtitle{$subtitle$}
 $endif$
-$if(author)$
 \usepackage{tabularx}
+$if(author)$
 \author{
   \begin{tabularx}{\textwidth}{
     $for(author)$>{\centering\arraybackslash}X$endfor$
