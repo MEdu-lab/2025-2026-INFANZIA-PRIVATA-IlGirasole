@@ -19,19 +19,6 @@
 \RequirePackage{authblk}
 \RequirePackage{etoolbox}
 
-% Allinea a sinistra il blocco autori/affiliazioni
-\renewcommand\Authands{, } % Usa la virgola invece di "and" tra gli autori
-\makeatletter
-\patchcmd{\AB@authors}{\centering}{\raggedright}{}{} % Sostituisce \centering con \raggedright
-\patchcmd{\AB@affillist}{\centering}{\raggedright}{}{} % Fa lo stesso per le affiliazioni
-\makeatother
-
 \renewcommand\Authfont{\normalsize\bfseries}
 \renewcommand\Affilfont{\small\itshape}
 \setlength{\affilsep}{1em}
-
-\makeatletter
-\pretocmd{\@author}
-  {\begin{flushright}\large\bfseries\gruppo\end{flushright}\par\vspace{1em}}
-  {}{} % Argomenti per successo/fallimento (lasciare vuoti)
-\makeatother
