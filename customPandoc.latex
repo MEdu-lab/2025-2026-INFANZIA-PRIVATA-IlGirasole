@@ -27,7 +27,7 @@ $if(babel-lang)$
   $babel-lang$,
 $endif$
 $endif$
-\usepackage{tabularx}
+
 $for(classoption)$
   $classoption$$sep$,
 $endfor$
@@ -536,14 +536,17 @@ $endif$
 \subtitle{$subtitle$}
 $endif$
 $if(author)$
+\usepackage{tabularx}
 \author{
   \begin{tabularx}{\textwidth}{
     $for(author)$>{\centering\arraybackslash}X$endfor$
   }
   % Riga con i nomi
-  $for(author)$\textbf{$author.name$}$sep$ & $endfor$ \\
+  $for(author)$
+    \textbf{$author.name$}$sep$ & 
+  $endfor$ \\
   % Riga con le affiliazioni
-  $for(author)$\textit{$author.affiliation$}$sep$ & $endfor$
+  $for(author)$\textit{$author.affiliation$}$sep$ & $endfor$ \\
   \end{tabularx}
 }
 $endif$
