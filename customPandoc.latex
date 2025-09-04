@@ -536,18 +536,20 @@ $endif$
 \subtitle{$subtitle$}
 $endif$
 \usepackage{tabularx}
+\usepackage{array}
+
 $if(author)$
 \author{
-  \begin{tabularx}{\textwidth}{
-    $for(author)$>{\centering\arraybackslash}X$endfor$
-  }
-  % Riga con i nomi
-  $for(author)$
-    \textbf{$author.name$}$sep$ & 
-  $endfor$ \\
-  % Riga con le affiliazioni
-  $for(author)$\textit{$author.affiliation$}$sep$ & $endfor$ \\
-  \end{tabularx}
+  \begin{center}
+    $for(author)$
+      \textbf{$author.name$}$if(author.affiliation)$ \\ 
+      \textit{$author.affiliation$}$endif$
+      $sep$
+      
+      \vspace{0.5em}
+      
+    $endfor$
+  \end{center}
 }
 $endif$
 \date{$date$}
