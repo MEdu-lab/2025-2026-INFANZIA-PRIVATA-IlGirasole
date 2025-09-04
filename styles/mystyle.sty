@@ -1,0 +1,30 @@
+% mystyle.sty
+\ProvidesPackage{mystyle}
+
+% Margini (usa il pacchetto geometry)
+\RequirePackage[margin=2.5cm]{geometry}
+
+% Dimensione del font
+\renewcommand\normalsize{\fontsize{11}{13}\selectfont}
+
+\usepackage{styles/titlesec}
+\titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{\thesection}{1em}{}
+
+\titleformat{\subsection}[block]{\normalfont\Large\bfseries\centering}{}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\centering}
+  {\thesubsubsection}{1em}{}
+
+\RequirePackage{authblk}
+\RequirePackage{etoolbox}
+
+\renewcommand\Authfont{\normalsize\bfseries}
+\renewcommand\Affilfont{\small\itshape}
+\setlength{\affilsep}{1em}
+
+\makeatletter
+\pretocmd{\@author}
+  {\begin{center}\large\bfseries\gruppo\end{center}\par\vspace{1em}}
+  {}{} % Argomenti per successo/fallimento (lasciare vuoti)
+\makeatother
