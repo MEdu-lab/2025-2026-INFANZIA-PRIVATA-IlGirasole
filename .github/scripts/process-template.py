@@ -88,8 +88,8 @@ def generate_yaml_header(config):
         'author': ' ',
         'header-includes': [
             "\\usepackage{styles/mystyle}",
-            f"\\renewcommand{{\\gruppo}}{{{progetto.get('gruppo', '')}}}",
-            f"\\renewcommand{{\\authorlist}}{{{authorlist}}}"
+            f"\\newcommand{{\\gruppo}}{{{progetto.get('gruppo', '')}}}",
+            f"\\newcommand{{\\authorlist}}{{{authorlist}}}"
         ]
     }
     
