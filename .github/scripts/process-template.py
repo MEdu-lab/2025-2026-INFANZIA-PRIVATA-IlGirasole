@@ -31,7 +31,7 @@ from liquid import Template
 
 
 #def generate_yaml_header(config: dict) -> str:
-    """Genera header YAML per Pandoc usando la sintassi nativa per gli autori."""
+#    """Genera header YAML per Pandoc usando la sintassi nativa per gli autori."""
     
     # Crea un dizionario con i metadati di Pandoc
 #    metadata = {
