@@ -27,7 +27,6 @@ $if(babel-lang)$
   $babel-lang$,
 $endif$
 $endif$
-
 $for(classoption)$
   $classoption$$sep$,
 $endfor$
@@ -535,23 +534,18 @@ $else$
 $endif$
 \subtitle{$subtitle$}
 $endif$
-\usepackage{tabularx}
-\usepackage{array}
-
-$if(author)$
-\author{
-  \begin{center}
-    $for(author)$
-      \textbf{$author.name$}$if(author.affiliation)$ \\ 
-      \textit{$author.affiliation$}$endif$
-      $sep$
-      
-      \vspace{0.5em}
-      
-    $endfor$
-  \end{center}
-}
+\author{%
+$for(author)$
+$if(author.name)$
+\textbf{$author.name$}%
+$if(author.affiliation)$ \\ \textit{$author.affiliation$}%
 $endif$
+$else$
+$author$%
+$endif$
+$sep$\and
+$endfor$
+}
 \date{$date$}
 $if(beamer)$
 $if(institute)$
