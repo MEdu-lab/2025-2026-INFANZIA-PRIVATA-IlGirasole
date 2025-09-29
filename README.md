@@ -80,10 +80,12 @@ La filosofia del progetto prevede l'utilizzo creativo di materiali semplici e ac
 Il laboratorio si svolge ogni mercoledì dal 01/10/2025 al 27/05/2026, per un totale di **33 incontri** (media di 4.1 incontri al mese).
 Ogni incontro dura circa un'ora e mezza: i bambini ci vengono affidati direttamente dalle educatrici entro le 16:30 e vengono riconsegnati alle famiglie tra le 17:45 e le 17:55. Gli ultimi minuti fino alle 18 servono agli organizzatori per lasciare ambienti puliti e adatti all'attività scolastica del giorno successivo, quindi si raccomanda puntualità per il ritiro dei bambini.
 
+<!-- dal momento che la merenda la fanno a scuola, forse non ha senso articolare il tempo in una sola attività (musicale)
 Ogni incontro si articola nel modo seguente:  
 - 16:30 inizio attività musicale   
 - 17:15 merenda e svago   
 - 17:40 preparazione per l'uscita   
+-->
 
 **Incontri mensili:**
 
