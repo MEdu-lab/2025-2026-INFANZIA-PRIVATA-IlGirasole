@@ -6,9 +6,3 @@ Nella progettazione di esperienze di apprendimento significative cerchiamo l'inn
 >*il ritmo si può solo liberare, sprigionare. Ritmo non è un'entità astratta, ritmo è la vita stessa. Ritmo agisce e provoca, è la forza che unisce linguaggio, musica e movimento.* (Carl Orff)
 
 
-<!-- **Maestri:** 
-{% for maestro in maestri %}
-- **{{ maestro.nome }}** - {{ maestro.qualifica }}
-{% endfor %}
-
--->
