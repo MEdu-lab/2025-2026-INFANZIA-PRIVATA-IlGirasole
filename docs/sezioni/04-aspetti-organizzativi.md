@@ -1,21 +1,13 @@
 ## ASPETTI ORGANIZZATIVI
 
-Il laboratorio si svolge ogni {{ programmazione.giorno_settimana }} dal {{ programmazione_calcolata.primo_incontro }} al {{ programmazione_calcolata.ultimo_incontro }}, per un totale di **{{ programmazione_calcolata.totale_incontri }} incontri** (media di {{ programmazione_calcolata.media_per_mese }} incontri al mese).
-Ogni incontro dura circa un'ora e mezza: i bambini ci vengono affidati direttamente dalle educatrici entro le 16:30 e vengono riconsegnati alle famiglie tra le 17:45 e le 17:55. Gli ultimi minuti fino alle 18 servono agli organizzatori per lasciare ambienti puliti e adatti all'attività scolastica del giorno successivo, quindi si raccomanda puntualità per il ritiro dei bambini.
-
-<!-- dal momento che la merenda la fanno a scuola, forse non ha senso articolare il tempo in una sola attività (musicale)
-Ogni incontro si articola nel modo seguente:  
-- 16:30 inizio attività musicale   
-- 17:15 merenda e svago   
-- 17:40 preparazione per l'uscita   
--->
+Il laboratorio si svolge ogni mercoledì dal 01/10/2025 al 27/05/2026, per un totale di **33 incontri** (media di 4.1 incontri al mese). Ogni incontro dura circa un'ora e mezza: i bambini ci vengono affidati direttamente dalle educatrici entro le 16:30 e vengono riconsegnati alle famiglie tra le 17:45 e le 17:55. Gli ultimi minuti fino alle 18 servono agli organizzatori per lasciare ambienti puliti e adatti all'attività scolastica del giorno successivo, quindi si raccomanda puntualità per il ritiro dei bambini.
 
 **Incontri mensili:**
 
 \begin{center}
 \begin{tabular}{*{8}{c}}
-{% for mese in programmazione_calcolata.dettaglio_per_mese %}\textbf{ {{ mese[0] }} }{% unless forloop.last %} & {% endunless %}{% endfor %} \\
-{% for mese in programmazione_calcolata.dettaglio_per_mese %} {{ mese[1] }} {% unless forloop.last %} & {% endunless %}{% endfor %} \\
+\textbf{Ottobre} & \textbf{Novembre} & \textbf{Dicembre} & \textbf{Gennaio} & \textbf{Febbraio} & \textbf{Marzo} & \textbf{Aprile} & \textbf{Maggio} \\
+5 & 4 & 3 & 4 & 4 & 4 & 5 & 4 \\
 \end{tabular}
 \end{center}
 
@@ -23,16 +15,7 @@ La programmazione tiene conto delle pause per le vacanze di Natale.
 
 **Costi:**
 
-- Quota bimestrale: {{ costi.quota_bimestrale }}€ per bambino    
-<!-- - Pagamento: {{ costi.modalita_pagamento }}   -->
-- **Costo totale del corso: {{ costi_calcolati.costo_totale }}€** ({{ costi_calcolati.numero_bimestri }} bimestri)    
+- Quota bimestrale: 120€ per bambino
+- **Costo totale del corso: 480€** (4 bimestri)
 
-<!---
-**Calendario pagamenti:**
-| Periodo | Importo | Scadenza |
-| :--- | ---: | :---: |
-{% for pagamento in costi_calcolati.dettaglio_pagamenti %}| {{ pagamento.periodo | capitalize }} | {{ pagamento.importo }}€ | {{ pagamento.scadenza }} |
-{% endfor %}
--->
-*{{ costi.nota_giugno }}*
-
+*Il mese di giugno si decide per tempo in base alle richieste di partecipazione*
