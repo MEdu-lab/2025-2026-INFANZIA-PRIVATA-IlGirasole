@@ -26,14 +26,14 @@ bambini e puntiamo a realizzare alcune istanze della musica di ricerca
 del XX e XXI secolo su cui lavoriamo quotidianamente, in collaborazione
 con alcuni importanti Conservatori italiani.
 
-\vspace{.7cm}
+\vspace{.2cm}
 
 > *il ritmo si può solo liberare, sprigionare. Ritmo non è un'entità
 > astratta, ritmo è la vita stessa. Ritmo agisce e provoca, è la forza
 > che unisce linguaggio, musica e movimento.* (Carl Orff)
 
 \begin{center}
-\includegraphics[width=0.7\textwidth]{images/output2.jpg}
+\includegraphics[width=0.9\textwidth]{images/output2.jpg}
 \end{center}
 
 ## CONTINUITÀ, FINALITÀ E OBIETTIVI
