@@ -1,49 +1,14 @@
-# Informazioni generali progetto
-progetto:
-  titolo: "Piccoli Esploratori Sonori"
-  gruppo: "MEduLab"
-  sottotitolo: "Casa dei Bambini 'il Girasole'"
-  anno_scolastico: "2025/2026"
+# Metadata progetto
+title: "Piccoli Esploratori Sonori"
+subtitle: "Casa dei Bambini 'il Girasole' - 2025/2026"
+gruppo: "A cura di MEduLab"
+documentclass: article
 
-# Informazioni sui maestri
 maestri:
   - nome: "Pietro Barale"
     ruolo: "operatore"
     qualifica: "diplomato in Musica Applicata alle immagini, Conservatorio di Santa Cecilia, Roma"
   - nome: "Giulio Romano De Mattia"
     ruolo: "operatore"
-    qualifica: " diplomato in Musica Elettronica, Conservatorio di Santa Cecilia, Roma"
-
-# Dettagli del corso
-corso:
-  tipologia: "musica d'insieme"
-  fascia_eta: "3-5 anni"
-  durata_incontro: "1 ora e mezza"
-  frequenza: "settimanale"
-  partecipanti_anno_precedente: "6-9 bambini"
-  periodo: "intero anno educativo"
-
-# Metodologia
-metodologia:
-  focus_principale: "processo educativo"
-  approccio: "dimensione del gioco"
-  personalizzazione: true
-  feedback_continuo: true
-
-# Programmazione temporale
-programmazione:
-  giorno_settimana: "mercoledì"
-  inizio: "2025-10-01"  # Ottobre 2025
-  fine: "2026-05-28"    # Maggio 2026
-  
-# Costi
-costi:
-  quota_bimestrale: 120  # Cifra ogni due mesi
-  modalita_pagamento: "all'inizio di ogni bimestre"
-  mesi_inclusi: ["ottobre", "novembre", "dicembre", "gennaio", "febbraio", "marzo", "aprile", "maggio"]
-  nota_giugno: "Il mese di giugno si decide per tempo in base alle richieste di partecipazione"  
-# Vacanze (da escludere)
-vacanze:
-  - nome: "Vacanze di Natale"
-    inizio: "2025-12-23"
-    fine: "2026-01-06"
+    qualifica: "diplomato in Musica Elettronica, Conservatorio di Santa Cecilia, Roma"
+ 
