@@ -108,16 +108,9 @@ agli organizzatori per lasciare ambienti puliti e adatti all'attività
 scolastica del giorno successivo, quindi si raccomanda puntualità per il
 ritiro dei bambini.
 
-**Incontri mensili:**
-
-\begin{center}
-\begin{tabular}{*{8}{c}cccccccccccccccc}
-\textbf{Ottobre} & \textbf{Novembre} & \textbf{Dicembre} & \textbf{Gennaio} & \textbf{Febbraio} & \textbf{Marzo} & \textbf{Aprile} & \textbf{Maggio} \\
-5 & 4 & 3 & 4 & 4 & 4 & 5 & 4 \\
-\end{tabular}
-\end{center}
-
-La programmazione tiene conto delle pause per le vacanze di Natale.
+**Incontri mensili:** Ottobre (5), Novembre (4), Dicembre (3), Gennaio
+(4), Febbraio (4), Marzo (4), Aprile (5), Maggio (4). La programmazione
+tiene conto delle pause per le vacanze di Natale.
 
 **Costi:**
 
