@@ -3,15 +3,17 @@
 name: Assembla Documento con Template
 
 on:
-  paths: 
-  - 'docs/sezioni/**'
-  - 'config.yml'
-  - '.github/scripts/**'
-  - '.github/workflows/**'
-  - 'styles/**'
-  - 'images/**'
-  - '*.tex'
-  - 'customPandoc.latex'
+  push:
+    branches: [ main ]
+    paths: 
+      - 'docs/sezioni/**'
+      - 'config.yml'
+      - '.github/scripts/**'
+      - '.github/workflows/**'
+      - 'styles/**'
+      - 'images/**'
+      - '*.tex'
+      - 'customPandoc.latex'
       
   pull_request:
     branches: [ main ]
