@@ -2,6 +2,7 @@
 author: ' '
 documentclass: article
 header-includes:
+- \usepackage{graphicx}
 - \usepackage{styles/mystyle}
 - \newcommand{\gruppo}{MEduLab}
 - "\\newcommand{\\authorlist}{\\begin{minipage}{0.3\\textwidth}\n        \\centering\n\
@@ -24,17 +25,9 @@ Nella progettazione di esperienze di apprendimento significative cerchiamo l'inn
 
 >*il ritmo si può solo liberare, sprigionare. Ritmo non è un'entità astratta, ritmo è la vita stessa. Ritmo agisce e provoca, è la forza che unisce linguaggio, musica e movimento.* (Carl Orff)
 
-
-<!-- **Maestri:** 
-
-- **Pietro Barale** - diplomato in Musica Applicata alle immagini, Conservatorio di Santa Cecilia, Roma
-
-- **Giulio Romano De Mattia** -  diplomato in Musica Elettronica, Conservatorio di Santa Cecilia, Roma
-
-- **Marco Di Gasbarro** - dottorando in Composizione e Performance Musicale, Conservatorio di Ferrara
-
-
--->
+\begin{center}
+\includegraphics[width=07\textwidth]{images/output2.jpg}
+\end{center}
 
 
 ## CONTINUITÀ, FINALITÀ E OBIETTIVI
@@ -91,9 +84,12 @@ Ogni incontro si articola nel modo seguente:
 
 **Incontri mensili:**
 
-| Ottobre | Novembre | Dicembre | Gennaio | Febbraio | Marzo | Aprile | Maggio |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **5** | **4** | **3** | **4** | **4** | **4** | **5** | **4** |
+\begin{center}
+\begin{tabular}{*{8}{c}}
+\textbf{ Ottobre } & \textbf{ Novembre } & \textbf{ Dicembre } & \textbf{ Gennaio } & \textbf{ Febbraio } & \textbf{ Marzo } & \textbf{ Aprile } & \textbf{ Maggio } \\
+ 5  &  4  &  3  &  4  &  4  &  4  &  5  &  4  \\
+\end{tabular}
+\end{center}
 
 La programmazione tiene conto delle pause per le vacanze di Natale.
 
