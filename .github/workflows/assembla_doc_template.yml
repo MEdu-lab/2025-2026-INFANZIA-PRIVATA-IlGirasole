@@ -5,15 +5,6 @@ name: Assembla Documento con Template
 on:
   push:
     branches: [ main ]
-    paths: 
-      - 'docs/sezioni/**'
-      - 'config.yml'
-      - '.github/scripts/**'
-      - '.github/workflows/**'
-      - 'styles/**'
-      - 'images/**'
-      - '*.tex'
-      - 'customPandoc.latex'
       
   pull_request:
     branches: [ main ]
@@ -32,37 +23,32 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/dmgiulioromano/pandoc-latex-docker-ubuntu:2026.1-small
+      image: ghcr.io/dmgiulioromano/pandoc-latex-docker-ubuntu:2026.1-basic
 
     steps:
     - name: Install dependencies (missing LaTeX packages )
       run: |
-        apt-get update && apt-get install -y git python3-pip
-        pip install pyyaml python-liquid
-        tlmgr install preprint
+        apt-get update && apt-get install -y git
+        tlmgr install preprint xcolor
         
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    - name: Processa i template con Python e Genera il PDF con Pandoc
+    - name: Assembla README e Genera il PDF con Pandoc
       run: |
         rm -f README.md *.pdf
-        python3 .github/scripts/process-template.py
+        # README.md assemblato (frontmatter da config.yml + sezioni concatenate)
+        pandoc docs/sezioni/*.md --metadata-file=config.yml -s -t markdown -o README.md
         TITLE=$(sed -n '/^---$/,/^---$/p' README.md | grep '^title:' | head -n1 | sed 's/title:[[:space:]]*//; s/^ *//; s/ *$//; s/[*]//g')
         SAFE_TITLE=$(echo "$TITLE" | tr ' ' '_' | tr -cd '[:alnum:]_')
         TIMESTAMP=$(date +%Y%m%d_%H%M%S)
         PDF_NAME="${SAFE_TITLE}-MEduLab-${TIMESTAMP}.pdf"
         echo "Generazione PDF: $PDF_NAME"
-        echo "=== DIRECTORY CORRENTE ==="
-        pwd
-        echo "=== IMMAGINE ==="
-        ls -la images/
-        pandoc README.md -o "$PDF_NAME" \
+        pandoc docs/sezioni/*.md --metadata-file=config.yml -o "$PDF_NAME" \
           --pdf-engine=pdflatex \
-          --template=styles/customPandoc.latex \
-          --resource-path=".:$GITHUB_WORKSPACE"
+          --template=styles/template.latex
         echo "PDF_NAME=$PDF_NAME" >> $GITHUB_ENV
         mkdir -p pages_artifact
         cp "${PDF_NAME}" pages_artifact/latest.pdf
@@ -92,7 +78,8 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
+        branch: ${{ github.ref_name }}
+        pull: true
 
     - name: Trigger presentation site rebuild
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
