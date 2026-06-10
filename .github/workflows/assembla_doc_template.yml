@@ -56,10 +56,9 @@ jobs:
         #PDF_NAME="${SAFE_TITLE}-${TIMESTAMP}.pdf"
         PDF_NAME="${SAFE_TITLE}-MEduLab-${TIMESTAMP}.pdf"
         echo "Generazione PDF: $PDF_NAME"
-        pandoc README.md -o "$PDF_NAME" \
+        pandoc docs/sezioni/*.md --metadata-file=config.yml -o "$PDF_NAME" \
           --pdf-engine=pdflatex \
-          --template=styles/customPandoc.latex \
-          --resource-path=.:images
+          --template=styles/customPandoc.latex
         echo "PDF_NAME=$PDF_NAME" >> $GITHUB_ENV
         mkdir -p pages_artifact
         cp "${PDF_NAME}" pages_artifact/latest.pdf
