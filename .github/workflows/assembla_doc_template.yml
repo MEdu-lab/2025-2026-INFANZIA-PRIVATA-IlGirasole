@@ -55,6 +55,10 @@ jobs:
         TIMESTAMP=$(date +%Y%m%d_%H%M%S)
         PDF_NAME="${SAFE_TITLE}-MEduLab-${TIMESTAMP}.pdf"
         echo "Generazione PDF: $PDF_NAME"
+        echo "=== DIRECTORY CORRENTE ==="
+        pwd
+        echo "=== IMMAGINE ==="
+        ls -la images/
         pandoc README.md -o "$PDF_NAME" \
           --pdf-engine=pdflatex \
           --template=styles/customPandoc.latex \
