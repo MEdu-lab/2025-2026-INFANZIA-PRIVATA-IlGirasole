@@ -50,6 +50,7 @@ def generate_yaml_header(config):
         'documentclass': 'article',
         'author': ' ',
         'header-includes': [
+            "\\usepackage{graphicx}",
             "\\usepackage{styles/mystyle}",
             f"\\newcommand{{\\gruppo}}{{{progetto.get('gruppo', '')}}}",
             f"\\newcommand{{\\authorlist}}{{{authorlist}}}"
