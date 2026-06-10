@@ -12,6 +12,3 @@ Nella progettazione di esperienze di apprendimento significative cerchiamo l'inn
 {% endfor %}
 
 -->
-\begin{center}
-\includegraphics[width=0.7\textwidth]{images/output.jpg}
-\end{center}
