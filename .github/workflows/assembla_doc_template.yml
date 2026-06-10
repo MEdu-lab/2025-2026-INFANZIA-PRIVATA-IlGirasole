@@ -83,6 +83,7 @@ jobs:
 
     - name: Trigger presentation site rebuild
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      continue-on-error: true
       uses: peter-evans/repository-dispatch@v3
       with:
         token: ${{ secrets.PRESENTATION_DISPATCH_TOKEN }}
