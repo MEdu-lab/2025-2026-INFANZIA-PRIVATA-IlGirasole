@@ -224,7 +224,7 @@ $endif$
 \usepackage{calc} % for calculating minipage widths
 
 % Correct order of tables after \paragraph or \subparagraph
-\Requirepackage{etoolbox}
+\RequirePackage{etoolbox}
 \makeatletter
 \patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
 \makeatother
