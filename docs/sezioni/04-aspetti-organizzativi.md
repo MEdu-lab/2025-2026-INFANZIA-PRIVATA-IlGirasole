@@ -12,9 +12,12 @@ Ogni incontro si articola nel modo seguente:
 
 **Incontri mensili:**
 
-|{% for mese in programmazione_calcolata.dettaglio_per_mese %} {{ mese[0] }} |{% endfor %}
-|{% for mese in programmazione_calcolata.dettaglio_per_mese %} :---: |{% endfor %}
-|{% for mese in programmazione_calcolata.dettaglio_per_mese %} **{{ mese[1] }}** |{% endfor %}
+\begin{center}
+\begin{tabular}{*{8}{c}}
+{% for mese in programmazione_calcolata.dettaglio_per_mese %}\textbf{ {{ mese[0] }} }{% unless forloop.last %} & {% endunless %}{% endfor %} \\
+{% for mese in programmazione_calcolata.dettaglio_per_mese %} {{ mese[1] }} {% unless forloop.last %} & {% endunless %}{% endfor %} \\
+\end{tabular}
+\end{center}
 
 La programmazione tiene conto delle pause per le vacanze di Natale.
 
